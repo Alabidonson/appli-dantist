@@ -1,106 +1,344 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Medical Landing Page</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet">
 </head>
+
 <body>
-<header class="header">
+
+  <!-- ── HEADER ── -->
+  <header class="header">
+    <div class="container">
+
+      <div class="logo">
+        <img src="images/logo.svg" alt="Logo">
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <img src="images/photoHeader.svg" alt="User" class="header-avatar">
+        <a href="#" class="btn-book">Book Now</a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <h2>Get Ready For Your Best Dental Experience !</h2>
+      <p>We use only the best quality materials on the market in order to provide the best products to our patients,
+        So don't worry about anything and book yourself.</p>
+
+      <div class="hero-actions">
+
+        <!-- Ligne 1 : bouton + téléphone -->
+        <div class="hero-actions-top">
+          <button class="btn-primary">Book an appointment</button>
+          <div class="phone">
+            <div class="phone-icon">
+              <img src="images/tel.svg" alt="Téléphone">
+            </div>
+            <div class="phone-text">
+              <span>Dental 24H Emergency</span>
+              <p>0900-78601</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ligne 2 : carte review -->
+        <div class="hero-actions-bottom">
+          <div class="review-card">
+            <div class="review-top">
+              <div class="review-author">
+                <img src="images/thomas.svg" alt="Thomas Daniel" class="review-avatar">
+                <div>
+                  <div class="review-name">Thomas daniel</div>
+                  <div class="review-role">Sr Dental</div>
+                </div>
+              </div>
+              <a href="#" class="review-linkedin">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+              </a>
+            </div>
+            <p class="review-text">
+              Top Quality dental treatment done by field experts,<br>
+              Highly Recommended for everyone
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Image docteur -->
+    <div class="hero-right">
+      <img src="images/Image (1).png" alt="Docteur" class="hero-img">
+    </div>
+
+  </section>
+
+  <!-- ── SERVICES ── -->
+  <section class="services">
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="images/dent.svg" alt="Root Canal">
+        </div>
+        <h3>Root Canal Treatment</h3>
+        <p>Root canal treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth.</p>
+        <a href="#" class="learn-more">Learn More <span>⊙</span></a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="imaage/levres.svg" alt="Cosmetic Dentist">
+        </div>
+        <h3>Cosmetic Dentist</h3>
+        <p>Cosmetic dentistry is the branch of dentistry that focuses on improving the appearance of your smile.</p>
+        <a href="#" class="learn-more">Learn More <span>⊙</span></a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="images/implant.svg" alt="Dental Implants">
+        </div>
+        <h3>Dental Implants</h3>
+        <p>A dental implant is an artificial tooth root that's placed into your jaw to hold a prosthetic tooth or bridge.</p>
+        <a href="#" class="learn-more">Learn More <span>⊙</span></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── WELCOME ── -->
+  <section class="welcome">
+
+    <div class="welcome-text">
+      <h2>We're <span class="underline">Welcoming</span> New Patients And Can't Wait To Meet You.</h2>
+      <p>We use only the best quality materials on the market in order to provide the best products to our patients,
+        So don't worry about anything and book yourself.</p>
+      <div class="welcome-form">
+        <div class="welcome-input">
+          <img src="images/tel.svg" alt="Phone" class="input-icon">
+          <input type="tel" placeholder="Enter your Phone Number">
+        </div>
+        <button class="btn-submit">Submit</button>
+      </div>
+    </div>
+
+    <div class="welcome-image">
+      <div class="welcome-img-bg"></div>
+      <img src="images/patient.svg" alt="Patient">
+    </div>
+
+  </section>
+  <!-- ── WHY CHOOSE ── -->
+<section class="why">
+  <div class="why-inner">
+
+    <!-- Image gauche -->
+    <div class="why-image">
+      <img src="images/analiste.svg" alt="Dentiste">
+    </div>
+
+    <!-- Texte droite -->
+    <div class="why-text">
+      <h2>Why Choose <span class="smile-wrap">Smile<svg class="smile-underline" width="120" height="8" viewBox="0 0 120 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.64895 5.00598C5.18668 4.67469 11.8342 4.70666 29.8796 4.80594C58.058 4.96314 80.4301 4.74445 86.6589 4.23053C87.1537 4.18169 47.6656 3.5026 43.6027 3.7525C37.2685 4.16059 7.08015 3.55071 1.01626 2.98032C-0.707704 2.82742 -0.0481626 2.34208 1.08021 2.24542C2.8426 2.08345 7.56153 2.13608 20.5003 2.2674C29.5992 2.35263 102.003 2.48879 109.932 1.82995C114.383 1.46037 117.091 1.11284 118.323 1.20955C119.354 1.28727 119.365 1.49745 118.456 2.06848C117.846 2.44913 118.519 2.68175 118.948 2.79C119.607 2.96999 119.315 3.56312 118.471 4.02958C117.329 4.66891 115.387 4.63694 116.328 3.99611C116.531 3.85756 116.586 3.50779 115.875 3.57253C113.803 3.76722 99.1635 5.09398 95.194 5.30956C52.8104 7.65546 11.5552 5.40494 2.79502 5.98756C-0.310826 6.20957 1.13249 5.2048 2.64895 5.00598Z" fill="#25B4F8"/>
+</svg></span> For All Your Dental Treatments?</h2>
+      <p>We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+
+      <ul class="why-list">
+        <li>
+          <img src="images/check.svg" alt="check">
+          Top quality dental team
+        </li>
+        <li>
+          <img src="images/check.svg" alt="check">
+          State of the art dental services
+        </li>
+        <li>
+          <img src="images/check.svg" alt="check">
+          Discount on all dental treatment
+        </li>
+        <li>
+          <img src="images/check.svg" alt="check">
+          Enrollment is quick and easy
+        </li>
+      </ul>
+
+      <button class="btn-primary">Book an appointment</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── PRECISE SMILE ── -->
+<section class="precise">
+  <div class="precise-inner">
+
+    <!-- Texte gauche -->
+    <div class="precise-text">
+      <h2>Leave Your Worries At The Door And Enjoy A Healthier, More <span class="precise-wrap">Precise Smile
+        <svg class="precise-underline" width="120" height="8" viewBox="0 0 120 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.64895 5.00598C5.18668 4.67469 11.8342 4.70666 29.8796 4.80594C58.058 4.96314 80.4301 4.74445 86.6589 4.23053C87.1537 4.18169 47.6656 3.5026 43.6027 3.7525C37.2685 4.16059 7.08015 3.55071 1.01626 2.98032C-0.707704 2.82742 -0.0481626 2.34208 1.08021 2.24542C2.8426 2.08345 7.56153 2.13608 20.5003 2.2674C29.5992 2.35263 102.003 2.48879 109.932 1.82995C114.383 1.46037 117.091 1.11284 118.323 1.20955C119.354 1.28727 119.365 1.49745 118.456 2.06848C117.846 2.44913 118.519 2.68175 118.948 2.79C119.607 2.96999 119.315 3.56312 118.471 4.02958C117.329 4.66891 115.387 4.63694 116.328 3.99611C116.531 3.85756 116.586 3.50779 115.875 3.57253C113.803 3.76722 99.1635 5.09398 95.194 5.30956C52.8104 7.65546 11.5552 5.40494 2.79502 5.98756C-0.310826 6.20957 1.13249 5.2048 2.64895 5.00598Z" fill="#25B4F8"/>
+        </svg>
+      </span></h2>
+      <p>We use only the best quality materials on the market in order to provide the best products to our patients, So don't worry about anything and book yourself.</p>
+      <button class="btn-primary">Book an appointment</button>
+    </div>
+
+    <!-- Image droite -->
+    <div class="precise-image">
+      <div class="precise-img-bg"></div>
+      <img src="images/sourire.svg" alt="Precise Smile">
+    </div>
+
+  </div>
+</section>
+<section class="cta">
+  <div class="cta-container">
+    <h2>
+      We’re <span class="underline-blue">Welcoming</span> New Patients<br>
+      And Can’t Wait To Meet You.
+    </h2>
+    <p>
+      We use only the best quality materials on the market in order to provide the best products to our patients.
+    </p>
+  </div>
+</section>
+<section class="video-section">
+  <div class="video-container">
+
+    <div class="video-card">
+      <img src="images/video.svg" alt="Dental video">
+
+      <!-- Overlay -->
+      <div class="video-overlay"></div>
+
+      
+    </div>
+
+    <button class="btn-watch">Watch Playlist</button>
+
+  </div>
+</section>
+<section class="team">
   <div class="container">
 
-    <!-- Logo -->
-    <div class="logo">
-      <img src="imaage/logo.svg" alt="logo">
+    <div class="team-header">
+      <h2>Meet Our <span class="smile-wrap">Specialists
+        <svg class="smile-underline" width="120" height="8" viewBox="0 0 120 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.64895 5.00598C5.18668 4.67469 11.8342 4.70666 29.8796 4.80594C58.058 4.96314 80.4301 4.74445 86.6589 4.23053C87.1537 4.18169 47.6656 3.5026 43.6027 3.7525C37.2685 4.16059 7.08015 3.55071 1.01626 2.98032C-0.707704 2.82742 -0.0481626 2.34208 1.08021 2.24542C2.8426 2.08345 7.56153 2.13608 20.5003 2.2674C29.5992 2.35263 102.003 2.48879 109.932 1.82995C114.383 1.46037 117.091 1.11284 118.323 1.20955C119.354 1.28727 119.365 1.49745 118.456 2.06848C117.846 2.44913 118.519 2.68175 118.948 2.79C119.607 2.96999 119.315 3.56312 118.471 4.02958C117.329 4.66891 115.387 4.63694 116.328 3.99611C116.531 3.85756 116.586 3.50779 115.875 3.57253C113.803 3.76722 99.1635 5.09398 95.194 5.30956C52.8104 7.65546 11.5552 5.40494 2.79502 5.98756C-0.310826 6.20957 1.13249 5.2048 2.64895 5.00598Z" fill="#25B4F8"/>
+        </svg>
+      </span></h2>
     </div>
 
-    <!-- Navigation -->
-    <nav>
-      <ul class="menu">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Blogs</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Slider CSS only -->
+    <div class="team-slider-wrapper">
+      <div class="team-slider">
 
-    <!-- Droite : photo + bouton -->
-    <div class="header-right">
-      <img src="imaage/photoHeader.svg" alt="user" class="header-avatar">
-      <a href="#" class="btn-book">Book Now</a>
+        <div class="team-card">
+          <img src="images/doc1.svg" alt="Jim Carry">
+        </div>
+
+        <div class="team-card">
+          <img src="images/doc2.svg" alt="Wade Warren">
+        </div>
+
+        <div class="team-card">
+          <img src="images/doc3.svg" alt="Jenny Wilson">
+        </div>
+
+        <div class="team-card">
+          <img src="images/doc4.svg" alt="Jacob Jones">
+        </div>
+
+      </div>
+    </div>
+
+    
+    <div class="team-nav">
+      <a href="#slide-start" class="team-prev">←</a>
+      <a href="#slide-end" class="team-next">→</a>
     </div>
 
   </div>
-</header>
+</section>
 
-<section class="hero">
-<div class="hero-text">
-<h2>Get Ready For Your Best Dental Experience !</h2>
-<p>We use only the best quality materials on the market in order to provide the best products to our patients,
-   So don’t worry about anything and book yourself.</p>
-<div class="hero-actions">
-  <button class="btn-primary">Book an appointment</button>
-  <div class="phone">
-    <div class="phone-icon">
-      <img src="imaage/tel.svg" alt="tel">
+  <!-- ── ARTICLES ── -->
+  <section class="section">
+    <div class="container">
+      <h2>Latest Articles</h2>
+      <div class="articles">
+        <div class="article">
+          <img src="https://via.placeholder.com/300" alt="Article 1">
+          <div class="article-content">
+            <h4>Article 1</h4>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="article">
+          <img src="https://via.placeholder.com/300" alt="Article 2">
+          <div class="article-content">
+            <h4>Article 2</h4>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="article">
+          <img src="https://via.placeholder.com/300" alt="Article 3">
+          <div class="article-content">
+            <h4>Article 3</h4>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="phone-text">
-      <span>Dental 24H Emergency</span>
-      <p>0900-78601</p>
+  <!-- ── STATS ── -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat">
+        <h2>50+</h2>
+        <p>Doctors</p>
+      </div>
+      <div class="stat">
+        <h2>1000+</h2>
+        <p>Patients</p>
+      </div>
+      <div class="stat">
+        <h2>20+</h2>
+        <p>Years Experience</p>
+      </div>
     </div>
-  </div>
-</div> 
-</div>
+  </section>
 
-<div class="hero-right">
-
-  <!-- Image docteur -->
-  <img src="imaage/Image (1).png" class="img">
-</div>
-
-</section>
-
-<section class="features">
-<div class="card"><h3>Qualified Doctors</h3><p>Lorem ipsum</p></div>
-<div class="card"><h3>Modern Equipment</h3><p>Lorem ipsum</p></div>
-<div class="card"><h3>Emergency Care</h3><p>Lorem ipsum</p></div>
-</section>
-
-<section class="section">
-<h2>Latest Articles</h2>
-<div class="articles">
-<div class="article">
-<img src="https://via.placeholder.com/300">
-<div class="article-content"><h4>Article 1</h4><p>Lorem ipsum</p></div>
-</div>
-<div class="article">
-<img src="https://via.placeholder.com/300">
-<div class="article-content"><h4>Article 2</h4><p>Lorem ipsum</p></div>
-</div>
-<div class="article">
-<img src="https://via.placeholder.com/300">
-<div class="article-content"><h4>Article 3</h4><p>Lorem ipsum</p></div>
-</div>
-</div>
-</section>
-
-<section class="stats">
-<div class="stat"><h2>50+</h2><p>Doctors</p></div>
-<div class="stat"><h2>1000+</h2><p>Patients</p></div>
-<div class="stat"><h2>20+</h2><p>Years Experience</p></div>
-</section>
-
-<section class="footer">
-<h2>Subscribe Newsletter</h2>
-<input type="email" placeholder="Your email">
-<button>Subscribe</button>
-<p style="margin-top:20px;">© 2026 MediCare</p>
-</section>
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <h2>Subscribe Newsletter</h2>
+    <input type="email" placeholder="Your email">
+    <button>Subscribe</button>
+    <p style="margin-top:20px;">© 2026 MediCare</p>
+  </footer>
 
 </body>
+
 </html>
